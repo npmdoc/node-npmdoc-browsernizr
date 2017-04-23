@@ -1,0 +1,294 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >browsernizr (v2.2.0)</a>
+</h1>
+<h4>Modernizr wrapper for use with browserify</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.browsernizr">module browsernizr</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browsernizr.</span>ModernizrProto</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.browsernizr.ModernizrProto">module browsernizr.ModernizrProto</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browsernizr.ModernizrProto.addAsyncTest">
+            function <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>addAsyncTest
+            <span class="apidocSignatureSpan">(fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browsernizr.ModernizrProto.addTest">
+            function <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>addTest
+            <span class="apidocSignatureSpan">(name, fn, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browsernizr.ModernizrProto.atRule">
+            function <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>atRule
+            <span class="apidocSignatureSpan">(prop)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.browsernizr.ModernizrProto.on">
+            function <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>on
+            <span class="apidocSignatureSpan">(test, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>_config</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>_cssomPrefixes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>_domPrefixes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>_prefixes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>_q</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>_version</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.browsernizr" id="apidoc.module.browsernizr">module browsernizr</a></h1>
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.browsernizr.ModernizrProto" id="apidoc.module.browsernizr.ModernizrProto">module browsernizr.ModernizrProto</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.browsernizr.ModernizrProto.addAsyncTest" id="apidoc.element.browsernizr.ModernizrProto.addAsyncTest">
+        function <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>addAsyncTest
+        <span class="apidocSignatureSpan">(fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addAsyncTest = function (fn) {
+  tests.push({name: null, fn: fn});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browsernizr.ModernizrProto.addTest" id="apidoc.element.browsernizr.ModernizrProto.addTest">
+        function <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>addTest
+        <span class="apidocSignatureSpan">(name, fn, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addTest = function (name, fn, options) {
+  tests.push({name: name, fn: fn, options: options});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browsernizr.ModernizrProto.atRule" id="apidoc.element.browsernizr.ModernizrProto.atRule">
+        function <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>atRule
+        <span class="apidocSignatureSpan">(prop)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">atRule = function (prop) {
+  var length = prefixes.length;
+  var cssrule = window.CSSRule;
+  var rule;
+
+  if (typeof cssrule === &#x27;undefined&#x27;) {
+    return undefined;
+  }
+
+  if (!prop) {
+    return false;
+  }
+
+  // remove literal @ from beginning of provided property
+  prop = prop.replace(/^@/, &#x27;&#x27;);
+
+  // CSSRules use underscores instead of dashes
+  rule = prop.replace(/-/g, &#x27;_&#x27;).toUpperCase() + &#x27;_RULE&#x27;;
+
+  if (rule in cssrule) {
+    return &#x27;@&#x27; + prop;
+  }
+
+  for (var i = 0; i &#x3c; length; i++) {
+    // prefixes gives us something like -o-, and we want O_
+    var prefix = prefixes[i];
+    var thisRule = prefix.toUpperCase() + &#x27;_&#x27; + rule;
+
+    if (thisRule in cssrule) {
+      return &#x27;@-&#x27; + prefix.toLowerCase() + &#x27;-&#x27; + prop;
+    }
+  }
+
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var prefixes = require(&#x27;./cssomPrefixes.js&#x27;);
+/**
+ * atRule returns a given CSS property at-rule (eg @keyframes), possibly in
+ * some prefixed form, or false, in the case of an unsupported rule
+ *
+ * @memberof Modernizr
+ * @name Modernizr.atRule
+ * @optionName Modernizr.<span class="apidocCodeKeywordSpan">atRule</span>()
+ * @optionProp atRule
+ * @access public
+ * @function atRule
+ * @param {string} prop - String name of the @-rule to test for
+ * @returns {string|boolean} The string representing the (possibly prefixed)
+ * valid version of the @-rule, or `false` when it is unsupported.
+ * @example
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.browsernizr.ModernizrProto.on" id="apidoc.element.browsernizr.ModernizrProto.on">
+        function <span class="apidocSignatureSpan">browsernizr.ModernizrProto.</span>on
+        <span class="apidocSignatureSpan">(test, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">on = function (test, cb) {
+  // I don&#x27;t really think people should do this, but we can
+  // safe guard it a bit.
+  // -- NOTE:: this gets WAY overridden in src/addTest for actual async tests.
+  // This is in case people listen to synchronous tests. I would leave it out,
+  // but the code to *disallow* sync tests in the real version of this
+  // function is actually larger than this.
+  var self = this;
+  setTimeout(function() {
+    cb(self[test]);
+  }, 0);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
